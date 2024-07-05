@@ -197,6 +197,7 @@ a{
     }
 }
 @media(max-width:310px){
+    /* design */
     body{
         overflow: auto;
     }
