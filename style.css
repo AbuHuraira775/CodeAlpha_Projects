@@ -29,14 +29,14 @@
     height: max-content;
     /* width: max-content; */
     width: 40%;
-    box-shadow: 0 0 32px -18px #333;
+    box-shadow: 0 0 32px -20px #333;
     display: flex;
     flex-direction: column;
     /* border: 2px solid #0066b2; */
     border-radius: 1rem;
 }
 .box:hover{
-    box-shadow: 0 0 32px -17px #333;
+    box-shadow: 0 0 32px -18px #333;
     border-radius: 1.3rem;
 }
 .box h1{
@@ -62,6 +62,9 @@ input,button{
     outline: none;
     border-radius: .5rem;
     border: 1px solid black;
+}
+input{
+    background-color: #fff;
 }
 input:focus{
     border: 1px solid #0066b2 !important;
@@ -99,4 +102,106 @@ button:hover{
 a{
     text-decoration: none;
     color: #fff;
+}
+
+@media(max-width:920px){
+    .box{
+        width: 50%;
+    }
+    .title-h1{
+        font-size: 1.5rem ;
+    }
+    .link{
+        padding: .3rem .8rem;
+        font-size: .8rem;
+    }
+
+}
+
+@media(max-width:780px){
+    .box{
+        width: 70%;
+    }
+    .title-h1{
+        font-size: 2rem ;
+    }
+
+}
+@media(max-width:780px){
+    .title-h1{
+        font-size: 1.8rem ;
+    }
+}
+@media(max-width:540px){
+    .box{
+        width: 80%;
+    }
+    .title-h1{
+        font-size: 1.8rem ;
+    }
+}
+@media(max-width:450px){
+    .box{
+        padding: 3rem 2rem;
+    }
+    .title-h1{
+        font-size: 1.3rem ;
+    }
+    .heading h1{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .field ,.btn{
+        height: 2rem;
+        margin-bottom: 2rem;
+    }
+    input,button{
+        padding: .5rem;
+    }
+}
+@media(max-width:450px){
+    .box{
+        width: 100%;
+    }
+    .wrapper{
+        padding: 1rem;
+    }
+    .title-h1{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:450px){
+    body{
+        overflow: hidden;
+    }
+    .title{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-h1{
+        text-align: center;
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem;
+    }
+    .link{
+        width: 100%;
+        text-align: center;
+        padding: .6rem ;
+    }
+    .wrapper h1,.result h2{
+        font-size: 1.1rem;
+    }
+    input,button,.result p{
+        font-size: .9rem;
+    }
+}
+@media(max-width:310px){
+    body{
+        overflow: auto;
+    }
+    .result p{
+        font-size: 1rem;
+        text-align: center;
+    }
 }
